@@ -5,10 +5,98 @@
 	<title>Gabriel F's Port-Folio</title>
 	<!-- chargement du style -->
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/redir-lang.js"></script>
+	<script type="text/javascript" src="./js/redir-menu.js"></script>
 </head>
 <body>
-	<a href="index_EN.html">English</a>
-	<a href="index_FR.html">Français</a>
+	<section data-home="home" class="lang">
+		<!--<a class="gatekeeper" href="index_EN.html">English<img class="" src=""></a>
+		<a class="gatekeeper" href="index_FR.html">Français<img class="" src=""></a>-->
+		<button data-target="EN">English</button>
+		<button data-target="FR">Français</button>
+	</section>
+	<section data-lang="EN" data-page="home_en" class="hidden">
+		<aside class="flex-base2 flex-center">
+			<a class="" href="./index_EN.html">
+				<h1 class="">Gabriel F.</h1>
+			</a>
+			<!-- Menu -->	
+			<div class="navi flex-base flex-start">
+				<nav class="flex-base flex-center">
+					<ul class="no-padding-margin no-dot flex-base2 flex-center menu-buttons full-height">
+						<li class="full-height flex-base flex-center top-mnu"><a class="full-width flex-base flex-center" href="./index_EN.html">Home</a></li>
+						<li class="full-height flex-base flex-center"><a class="full-width 	flex-base flex-center" href="./skills.html">My skills</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<main>
+			<!-- présentation -->
+			<p>I'm a 26 year old development student at the IT-Akademy in Lyon, France.</p>
+			<!-- experiences -->
+			<p>I used to work in a variety of factories, and also was ad poster for two years. Due to lots of short job timings, I'm quite adaptable</p>
+			<!-- contact -->
+			<p>You can reach me through g.fritz[at]edu.it-akademy.fr.</p>
+		</main>
+	</section>
+	<section data-page="skills_en" class="hidden">
+		<aside class="flex-base2 flex-center">
+			<a class="" href="./index_EN.html">
+				<h1 class="">Gabriel F.</h1>
+			</a>
+			<!-- Menu -->	
+			<div class="navi flex-base flex-start">
+				<nav class="flex-base flex-center">
+					<ul class="no-padding-margin no-dot flex-base2 flex-center menu-buttons full-height">
+						<li class="full-height flex-base flex-center top-mnu"><a class="full-width flex-base flex-center" href="./index_EN.html">Home</a></li>
+						<li class="full-height flex-base flex-center"><a class="full-width 	flex-base flex-center" href="./skills.html">My skills</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<main>
+			<!-- my skills -->
+			<section class="flex-base flex-row full-width ">
+				<div  class="image-container flex-base flex-center">
+					<img src="./images/html.png">
+				</div>
+				<p class="p-base flex-base flex-center">Began to work on it at the IT-Akademy in Lyon two weeks ago, using it regularly.</p>
+			</section>
+			<section class="flex-base flex-row-invert full-width ">
+				<div  class="image-container flex-base flex-center">
+					<img src="./images/css.png">
+				</div>
+				<p class="p-base flex-base flex-center">Began to work work on it two weeks ago, using it regularly.</p>
+			</section>
+			<section class="flex-base flex-row full-width ">
+				<div  class="image-container flex-base flex-center">
+					<img src="./images/bash.png">
+				</div>
+				<p class="p-base flex-base flex-center">We worked a bit on it at the formation center, in the first few days</p>
+			</section>
+			<section class="flex-base flex-row-invert full-width ">
+				<div class="image-container flex-base flex-center">
+					<img src="./images/javascript.png">
+				</div>
+				<p class="p-base flex-base flex-center">Began to work on it two days ago. </p>
+			</section>	
+		<!-- Icon made by smashicons from www.flaticon.com-->	
+		</main>
+		
+	</section>
+	<section data-lang="FR" data-page="home_fr">
+		
+	</section>
+	<section data-page="skills_fr">
+		
+	</section>
+	<footer class="flex-base flex-center">
+		<ul class="no-dot no-padding-margin flex-base flex-center  footer-button">
+			<li class="flex-base flex-center full-height"><img src="./images/copyright.png" alt="copyright" class="copyright"> 2018 GF </li>
+			<!--<li class="flex-base flex center fullheight"><p class="flex-base flex-center full-height">Images by <a class="flex-base flex center fullheight" href="https://www.artstation.com/joshdsgn">Joshdsgn</a></p></li>
+			<li class="flex-base flex-center full-height"><a class="flex-base flex-center full-height" href="#">Mentions Légales</a></li>-->
+		</ul>
+	</footer>
 </body>
 </html>

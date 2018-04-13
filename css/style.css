@@ -1,4 +1,10 @@
-/* balise */
+/* Tags: line 8 ;
+   Classes: line 46;
+   Ids: line 100;
+   Complexs: line 102;
+   Media Queries: line 137;	
+*/
+/* Tags */
 a{
 	color: black;
 	text-decoration: none;
@@ -9,24 +15,31 @@ a:visited{
 	text-decoration: none;
 }
 aside{
+	font-family: 'Oswald', sans-serif;
 	height: 100%;
 	width: 30%;
 	position: fixed;
 	background-color: #A9CBD9;
 	left: 0px;
-	/*border-right: 1px solid #516673;*/
 	box-shadow: 8px 0 12px -3px rgba(0, 0, 0, 0.3)	
 }
 body{
-	background-image: url(./images/bg.png);
+	background-image: url(../images/bg.png);
 }
 footer{
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
 	width: 30%;
 	height: 40px;
 	position: fixed;
 	bottom: 0;
 }
+h1{
+	font-weight: 700;
+	font-size: 29px;
+}
 main{
+	font-family: 'Josefin Sans', sans-serif;
 	padding: 80px;	
 	padding-left: 35%;
 }
@@ -62,8 +75,15 @@ main{
 .full-width{
 	width: 100%;
 }
+.gatekeeper:hover{
+	cursor: url(../images/mouses/scroll.png), pointer);
+}
+.hidden{
+	display: none;
+}
 .navi{
 	height: 70%;
+	font-size: 19px;
 }
 .no-dot{
 	list-style: none;	
@@ -80,6 +100,8 @@ main{
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+/* ids */
+
 /* complex classes */
 
 .footer-button>li>a{
@@ -92,6 +114,12 @@ main{
 }
 .footer-button>li>a:hover{
 	cursor: pointer;
+}
+footer>ul>li>p{
+	margin: 15px;
+}
+footer>ul>li>p>a{
+	margin: 5px;
 }
 .menu-buttons>li>a{
 	color: black;
@@ -109,4 +137,25 @@ main{
 .top{
 
 }
-/* ids */
+/* Media queries */
+@media screen and (max-width: 600px){
+	aside.flex-base2{
+		height: 10%;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;	
+	}
+	footer{
+		height: 10%;
+		width: 100%
+	}
+	main{
+		padding: 0%;
+		padding-top: 30%;
+		padding-left: 2%;
+		padding-right: 2%;	
+	}
+	nav>.flex-base2{
+		flex-direction: row;
+	}
+}
